@@ -7,8 +7,8 @@ import csv
 response = requests.get(
     url="https://app.scrapingbee.com/api/v1/store/google",
     params={
-        "api_key": "LZVDH02ZX1JF2QIPTPUCATOKAM0H2SVWSSA1GMYM3F644K6OMZTNWT753H1DUTJB88JF8Y791TO3T1ZH",
-        "search": "site:youtube.com openinapp.co",
+        "api_key": "<add scrapy api key>",
+        "search": "<add search result>",
         "nb_results": "10000",
     },
 
@@ -37,7 +37,7 @@ for i in range(len(l1)):
         urls.append(t)
 
 
-writer = open("Listed/Channel_links.csv", 'w+')
+writer = open("<foldername/filename.csv>", 'w+')
 writer_out = csv.writer(writer, delimiter='\n')
 fields = ['channel link']
 writer_out.writerow(fields)
